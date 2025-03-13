@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "Sistema-audio-completo-Prati-rescue")(type "Legacy")(uri "${KIPRJMOD}/Sistema audio completo Prati-rescue.lib")(options "")(descr ""))
+  (lib (name "Amplificatore-rescue")(type "Legacy")(uri "${KIPRJMOD}/Amplificatore-rescue.lib")(options "")(descr ""))
+)

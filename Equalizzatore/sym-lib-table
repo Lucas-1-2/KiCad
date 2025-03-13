@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "Equalizzatore-Prati-rescue")(type "Legacy")(uri "${KIPRJMOD}/Equalizzatore Prati-rescue.lib")(options "")(descr ""))
+)
