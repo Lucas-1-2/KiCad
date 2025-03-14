@@ -1,0 +1,192 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Alimentatore_7805_Prati"
+Date "2021-11-16"
+Rev ""
+Comp "Lucas Prati 4^A EN"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:C C1
+U 1 1 618A3824
+P 4200 3900
+F 0 "C1" H 4315 3946 50  0000 L CNN
+F 1 "100n" H 4315 3855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 4238 3750 50  0001 C CNN
+F 3 "~" H 4200 3900 50  0001 C CNN
+	1    4200 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 618A3CC8
+P 4750 3900
+F 0 "C2" H 4865 3946 50  0000 L CNN
+F 1 "10u" H 4865 3855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 4750 3900 50  0001 C CNN
+F 3 "~" H 4750 3900 50  0001 C CNN
+	1    4750 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:LM7805_TO220 U1
+U 1 1 619368EB
+P 5600 3500
+F 0 "U1" H 5600 3742 50  0000 C CNN
+F 1 "LM7805_TO220" H 5600 3651 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5600 3725 50  0001 C CIN
+F 3 "https://www.onsemi.cn/PowerSolutions/document/MC7800-D.PDF" H 5600 3450 50  0001 C CNN
+	1    5600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+10V #PWR01
+U 1 1 61937746
+P 3300 3250
+F 0 "#PWR01" H 3300 3100 50  0001 C CNN
+F 1 "+10V" H 3315 3423 50  0000 C CNN
+F 2 "" H 3300 3250 50  0001 C CNN
+F 3 "" H 3300 3250 50  0001 C CNN
+	1    3300 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 61937BD3
+P 5600 4500
+F 0 "#PWR02" H 5600 4250 50  0001 C CNN
+F 1 "GND" H 5605 4327 50  0000 C CNN
+F 2 "" H 5600 4500 50  0001 C CNN
+F 3 "" H 5600 4500 50  0001 C CNN
+	1    5600 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C3
+U 1 1 6193D915
+P 6300 3900
+F 0 "C3" H 6415 3946 50  0000 L CNN
+F 1 "10u" H 6415 3855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 6300 3900 50  0001 C CNN
+F 3 "~" H 6300 3900 50  0001 C CNN
+	1    6300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 6193E203
+P 6750 3900
+F 0 "C4" H 6865 3946 50  0000 L CNN
+F 1 "100n" H 6865 3855 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 6788 3750 50  0001 C CNN
+F 3 "~" H 6750 3900 50  0001 C CNN
+	1    6750 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3500 3600 3500
+Wire Wire Line
+	3900 3500 4200 3500
+Wire Wire Line
+	4200 3500 4200 3750
+Wire Wire Line
+	3300 3250 3300 3500
+Connection ~ 3300 3500
+Wire Wire Line
+	4200 3500 4750 3500
+Wire Wire Line
+	4750 3500 4750 3750
+Connection ~ 4200 3500
+Wire Wire Line
+	4200 4050 4200 4350
+Wire Wire Line
+	4200 4350 4750 4350
+$Comp
+L Connector:Conn_01x02_Female J2
+U 1 1 619407A9
+P 7600 3850
+F 0 "J2" H 7628 3826 50  0000 L CNN
+F 1 "Conn_01x02_Female" H 7628 3735 50  0000 L CNN
+F 2 "Connector_JST:JST_NV_B02P-NV_1x02_P5.00mm_Vertical" H 7600 3850 50  0001 C CNN
+F 3 "~" H 7600 3850 50  0001 C CNN
+	1    7600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J1
+U 1 1 61940CE1
+P 3100 3950
+F 0 "J1" H 2992 3625 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 2992 3716 50  0000 C CNN
+F 2 "Connector_JST:JST_NV_B02P-NV_1x02_P5.00mm_Vertical" H 3100 3950 50  0001 C CNN
+F 3 "~" H 3100 3950 50  0001 C CNN
+	1    3100 3950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3300 3500 3300 3850
+Wire Wire Line
+	3300 3950 3300 4350
+Wire Wire Line
+	3300 4350 4200 4350
+Connection ~ 4200 4350
+Wire Wire Line
+	4750 4050 4750 4350
+Wire Wire Line
+	4750 3500 5300 3500
+Connection ~ 4750 3500
+Wire Wire Line
+	5600 3800 5600 4350
+Wire Wire Line
+	5600 4350 4750 4350
+Connection ~ 4750 4350
+Wire Wire Line
+	6300 3750 6300 3500
+Wire Wire Line
+	6300 3500 5900 3500
+Wire Wire Line
+	6300 3500 6750 3500
+Wire Wire Line
+	6750 3500 6750 3750
+Connection ~ 6300 3500
+Wire Wire Line
+	6300 4050 6300 4350
+Wire Wire Line
+	6300 4350 5600 4350
+Connection ~ 5600 4350
+Wire Wire Line
+	5600 4500 5600 4350
+Wire Wire Line
+	6300 4350 6750 4350
+Wire Wire Line
+	6750 4350 6750 4050
+Connection ~ 6300 4350
+Wire Wire Line
+	6750 3500 7400 3500
+Wire Wire Line
+	7400 3500 7400 3850
+Connection ~ 6750 3500
+Wire Wire Line
+	7400 3950 7400 4350
+Wire Wire Line
+	7400 4350 6750 4350
+Connection ~ 6750 4350
+$Comp
+L Diode:1N4007 D1
+U 1 1 6194AB8E
+P 3750 3500
+F 0 "D1" H 3750 3283 50  0000 C CNN
+F 1 "1N4007" H 3750 3374 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 3750 3325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 3750 3500 50  0001 C CNN
+	1    3750 3500
+	-1   0    0    1   
+$EndComp
+$EndSCHEMATC

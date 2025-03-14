@@ -1,0 +1,235 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Alimentatore Switching 5V LM2674 ADJ"
+Date "2021-12-14"
+Rev ""
+Comp "Lucas Prati"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_01x02_Male J1
+U 1 1 61AF2393
+P 3250 3600
+F 0 "J1" H 3358 3781 50  0000 C CNN
+F 1 "Conn_01x02_IN" H 3358 3690 50  0000 C CNN
+F 2 "Connector_JST:JST_NV_B02P-NV_1x02_P5.00mm_Vertical" H 3250 3600 50  0001 C CNN
+F 3 "~" H 3250 3600 50  0001 C CNN
+	1    3250 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J2
+U 1 1 61AF2733
+P 8400 4200
+F 0 "J2" H 8372 4082 50  0000 R CNN
+F 1 "Conn_01x02_OUT" H 8372 4173 50  0000 R CNN
+F 2 "Connector_JST:JST_NV_B02P-NV_1x02_P5.00mm_Vertical" H 8400 4200 50  0001 C CNN
+F 3 "~" H 8400 4200 50  0001 C CNN
+	1    8400 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 61AF3F25
+P 4050 3600
+F 0 "D2" H 4050 3383 50  0000 C CNN
+F 1 "1N4007" H 4050 3474 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4050 3600 50  0001 C CNN
+F 3 "~" H 4050 3600 50  0001 C CNN
+	1    4050 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:CP1 C3
+U 1 1 61B84A49
+P 4450 4000
+F 0 "C3" H 4565 4046 50  0000 L CNN
+F 1 "100uF" H 4565 3955 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 4450 4000 50  0001 C CNN
+F 3 "~" H 4450 4000 50  0001 C CNN
+	1    4450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 61B854EC
+P 5250 3050
+F 0 "R1" V 5043 3050 50  0000 C CNN
+F 1 "1.5k" V 5134 3050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 5180 3050 50  0001 C CNN
+F 3 "~" H 5250 3050 50  0001 C CNN
+	1    5250 3050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61B858EC
+P 6550 3600
+F 0 "R2" V 6343 3600 50  0000 C CNN
+F 1 "4.7k" V 6434 3600 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 6480 3600 50  0001 C CNN
+F 3 "~" H 6550 3600 50  0001 C CNN
+	1    6550 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61B85E1F
+P 6500 3950
+F 0 "C1" H 6385 3904 50  0000 R CNN
+F 1 "10nF" H 6385 3995 50  0000 R CNN
+F 2 "Capacitor_THT:C_Disc_D3.8mm_W2.6mm_P2.50mm" H 6538 3800 50  0001 C CNN
+F 3 "~" H 6500 3950 50  0001 C CNN
+	1    6500 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:L L1
+U 1 1 61B861F4
+P 7150 4100
+F 0 "L1" V 7340 4100 50  0000 C CNN
+F 1 "100uH" V 7249 4100 50  0000 C CNN
+F 2 "Inductor_THT:L_Toroid_Vertical_L13.0mm_W6.5mm_P5.60mm" H 7150 4100 50  0001 C CNN
+F 3 "~" H 7150 4100 50  0001 C CNN
+	1    7150 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:CP1 C2
+U 1 1 61B8E03A
+P 7650 4250
+F 0 "C2" H 7765 4296 50  0000 L CNN
+F 1 "100uF" H 7765 4205 50  0000 L CNN
+F 2 "Capacitor_THT:C_Radial_D6.3mm_H5.0mm_P2.50mm" H 7650 4250 50  0001 C CNN
+F 3 "~" H 7650 4250 50  0001 C CNN
+	1    7650 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 61B8FF6D
+P 5650 4700
+F 0 "#PWR01" H 5650 4450 50  0001 C CNN
+F 1 "GND" H 5655 4527 50  0000 C CNN
+F 2 "" H 5650 4700 50  0001 C CNN
+F 3 "" H 5650 4700 50  0001 C CNN
+	1    5650 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky D1
+U 1 1 61B90806
+P 6700 4250
+F 0 "D1" V 6654 4330 50  0000 L CNN
+F 1 "Schottky 3.3A 50V" V 6745 4330 50  0000 L CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6700 4250 50  0001 C CNN
+F 3 "~" H 6700 4250 50  0001 C CNN
+	1    6700 4250
+	0    1    1    0   
+$EndComp
+NoConn ~ 5150 3800
+Wire Wire Line
+	7300 4100 7650 4100
+Connection ~ 7650 4100
+Wire Wire Line
+	6500 4100 6700 4100
+Wire Wire Line
+	7000 4100 6700 4100
+Connection ~ 6700 4100
+Wire Wire Line
+	6400 3600 6250 3600
+Wire Wire Line
+	6700 3600 7650 3600
+Wire Wire Line
+	7650 3600 7650 4100
+Wire Wire Line
+	6500 3800 6150 3800
+Wire Wire Line
+	6150 4000 6150 4100
+Wire Wire Line
+	6150 4100 6500 4100
+Connection ~ 6500 4100
+Wire Wire Line
+	7650 4400 7650 4600
+Wire Wire Line
+	7650 4600 6700 4600
+Wire Wire Line
+	6700 4600 6700 4400
+Wire Wire Line
+	8200 4200 8200 4600
+Wire Wire Line
+	8200 4600 7650 4600
+Connection ~ 7650 4600
+Wire Wire Line
+	6700 4600 5650 4600
+Wire Wire Line
+	5650 4200 5650 4600
+Connection ~ 6700 4600
+Wire Wire Line
+	5650 4700 5650 4600
+Connection ~ 5650 4600
+Wire Wire Line
+	3450 3600 3900 3600
+Wire Wire Line
+	3450 3700 3450 4600
+Wire Wire Line
+	3450 4600 4450 4600
+Wire Wire Line
+	5100 3050 4900 3050
+Wire Wire Line
+	4900 3050 4900 4600
+Connection ~ 4900 4600
+Wire Wire Line
+	4900 4600 5150 4600
+Connection ~ 4450 4600
+Wire Wire Line
+	4450 4600 4900 4600
+Wire Wire Line
+	5400 3050 6250 3050
+Wire Wire Line
+	6250 3050 6250 3600
+Connection ~ 6250 3600
+Wire Wire Line
+	6250 3600 6150 3600
+Wire Wire Line
+	4450 4150 4450 4600
+Wire Wire Line
+	4200 3600 4450 3600
+Wire Wire Line
+	4450 3850 4450 3600
+Connection ~ 4450 3600
+Wire Wire Line
+	4450 3600 5150 3600
+Wire Wire Line
+	7650 4100 8200 4100
+$Comp
+L Regulator_Switching:LM2674N-ADJ U1
+U 1 1 61FACAAF
+P 5650 3800
+F 0 "U1" H 5650 4267 50  0000 C CNN
+F 1 "LM2674N-ADJ" H 5650 4176 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 5700 3450 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2674.pdf" H 5650 3800 50  0001 C CNN
+	1    5650 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 3900 5150 3900
+Wire Wire Line
+	5150 3900 5150 4000
+Connection ~ 5150 4600
+Wire Wire Line
+	5150 4600 5650 4600
+Wire Wire Line
+	5250 4000 5150 4000
+Connection ~ 5150 4000
+Wire Wire Line
+	5150 4000 5150 4600
+$EndSCHEMATC
