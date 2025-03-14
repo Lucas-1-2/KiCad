@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "Barra_a_LED_PRATI-rescue")(type "Legacy")(uri "${KIPRJMOD}/Barra_a_LED_PRATI-rescue.lib")(options "")(descr ""))
+)
